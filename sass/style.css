@@ -987,7 +987,7 @@ section.section-contacto-img {
     margin: 30px 8%;
   }
   main section#section-img-index {
-    grid-gap: 16px;
+    grid-gap: 2%;
   }
   main section#section-img-index img {
     width: 120px;
