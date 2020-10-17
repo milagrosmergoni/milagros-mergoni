@@ -904,11 +904,14 @@ nav a img{
     }
    main section#section-img-index{
         /* grid-template-columns: auto auto;
-        grid-gap:15px;*/
+        grid-gap:15px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row wrap;*/
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 30px 10px;
         img{
-            width: 150px;
+            width: 100%;
         }
     }
     .section-index-3{

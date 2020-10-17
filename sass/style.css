@@ -1130,17 +1130,17 @@ section.section-contacto-img {
   }
   main section#section-img-index {
     /* grid-template-columns: auto auto;
-        grid-gap:15px;*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        grid-gap:15px;
+        display: flex;
+        flex-flow: row wrap;*/
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin: 30px 10px;
   }
   main section#section-img-index img {
-    width: 150px;
+    width: 100%;
   }
   .section-index-3 {
     height: 200px;
