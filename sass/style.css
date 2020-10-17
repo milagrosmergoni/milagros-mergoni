@@ -32,8 +32,8 @@ nav div ul li a:hover {
   padding: 8px 15px;
   -webkit-transition: .5s;
   transition: .5s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.22);
+          transform: scale(1.22);
 }
 
 /*MAIN SECTION INDEX*/
