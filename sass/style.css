@@ -127,8 +127,8 @@ main section#boton-index .boton:hover {
 }
 
 main section#boton-index .boxShadow {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 main section#boton-index .boton a:hover {
