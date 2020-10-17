@@ -987,7 +987,7 @@ section.section-contacto-img {
     margin: 30px 8%;
   }
   main section#section-img-index {
-    grid-gap: 2%;
+    grid-gap: 3%;
   }
   main section#section-img-index img {
     width: 120px;
@@ -1124,6 +1124,9 @@ section.section-contacto-img {
   nav a img {
     width: 163px;
   }
+  section.img-responsive-index {
+    height: 450px;
+  }
   main div.imgFrase p {
     font-size: 0.7em;
     margin: 10px 40px;
@@ -1141,6 +1144,10 @@ section.section-contacto-img {
   }
   main section#section-img-index img {
     width: 100%;
+  }
+  main section#boton-index div.boton {
+    padding: 10px 18px;
+    font-size: 25px;
   }
   .section-index-3 {
     height: 200px;
