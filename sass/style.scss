@@ -1,0 +1,1054 @@
+$color-fondo: white;
+$color-h1: #3C4446;
+$color-text: #3C4446;
+$color-nav: white;
+$color-p:black;
+$color-nav-text: rgb(29, 31, 31);
+$color-fondo-trabajo-1: #96B1B7;
+$color-fondo-trabajo-2: #a7bec3;
+$color-fondo-trabajo-3: #b8cace;
+$color-link: rgb(29, 31, 31);
+$hover-link: #96B1B7;
+$color-footer: #768a8f;
+$boton-index:  rgba(128,144,148, 0.75);
+$boton-formulario-contacto:   #96B1B7;
+$texto-boton-formulario: white;
+$color-fondo-contacto: white;
+$hover-galeria-img: #768a8f;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Poppins;
+    font-weight: 200;
+    background-color: $color-fondo;
+}
+/*NAVBAR*/
+nav{
+    a.navbar-brand{
+        padding-left: 5%;
+    }div{
+        padding-right: 4%;
+        ul li{
+            padding: 10px;
+            margin-left: 10px;
+        }
+    }   
+}
+nav div ul li a:hover{
+    background-color: $hover-link;
+    padding: 8px 15px;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+
+/*MAIN SECTION INDEX*/
+main{
+    section.section-index-1{
+      
+        background-image: url(../img/david-flores.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 0px;
+        height: 600px;
+               
+        div.imgFrase{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            flex-flow: column nowrap;
+            color: $color-p;
+            font-size: 25px;
+            padding-top: 380px;
+            font-weight: 400;
+        }
+    }section#section-img-index{
+            display: grid;
+            margin-top: 40px;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            grid-gap:25px;
+            img{
+                width: 280px;
+                transition: transform 0.4s;
+                cursor: pointer;
+            }img:hover{
+                transform: scale(1.10);
+            }
+    }section#boton-index{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin: 50px auto;
+            div.boton{
+                font-family: 'Annie Use Your Telescope', cursive;
+                background-color: $boton-index;
+                border: none;
+                color: white;
+                justify-content: center;
+                padding: 15px 30px;
+                text-align:center;
+                display: inline-block;
+                font-size: 2.1em;
+                transition: transform 0.3s;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+            }
+            
+            .boton:hover{
+                transform: scale(1.2);
+            }.boxShadow{
+                box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+            }.boton a:hover{
+                text-decoration: none;
+            }
+    }
+}
+
+/*SECTION TRABAJOS*/  
+    h1#tituloTrabajos{
+        grid-area: h1;
+        text-align: center;
+        color: $color-h1;
+        font-size: 25px;
+        font-weight: 600;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+    
+    section#encargoDisponible{
+        grid-area: encargo;
+    }
+    
+    section#bastidorGrid{
+        grid-area: bastidor;
+       
+    }
+    
+    section#marcoGrid{
+        grid-area: marco;
+    }
+    
+    #gridBoton{
+        grid-area: boton-galeria;
+        width: 100px;
+        justify-self: center;
+    }
+    
+    div#imgGridTrabajos{
+        grid-area: imagen;
+    }
+    
+    main#areaTrabajo{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "h1"
+        "encargo"
+        "bastidor"
+        "marco"
+        "boton-galeria"
+        "imagen";
+        margin: 10px auto 50px auto;
+        width: 80%;
+    }
+    
+    
+    /*Flex dentro de Grid*/
+    
+    main#areaTrabajo{
+        width: 80%;
+        max-width: 1200px;
+        color: $color-text;
+        h1#tituloTrabajos{
+            margin: auto;
+            color: $color-h1;
+        }
+        section#encargoDisponible{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            background-color:$color-fondo-trabajo-1;
+            align-items: center;
+            div.FondoTrabajos{
+                color: $color-text;
+                width: 100%;
+                text-align: justify;
+                h2{
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    margin: 10px 25px;  
+                    color: $color-text;  
+                }p{
+                    padding: 5px 50px 20px 50px;
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                    color: $color-text;
+                    a{
+                        text-decoration: none;
+                        color: $color-link;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                }
+            }
+
+        }section#bastidorGrid{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                background-color: $color-fondo-trabajo-2;
+                height: 350px;
+                align-items: center;
+                div.imgBastidorFlex{
+                    width: 35%;
+                    img{
+                        height: 300px;
+                    }
+                }div.bastidorFlex{
+                    width: 30%;
+                    text-align: justify;
+                    h3{
+                        font-size: 20px;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        color: $color-text;
+                    }p{
+                        font-size: 15px;
+                    }
+                }
+        }section#marcoGrid{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $color-fondo-trabajo-3;
+                height: 350px;
+                div.imgMarcoFlex{
+                    width: 35%;
+                    img{
+                        height: 300px;
+                    }
+                }
+                div.marcoFlex{
+                    width: 30%;
+                    text-align: justify;
+                    h3{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        color: $color-text;
+                        font-size: 20px;
+                    }p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            a.boton{
+                background-color: rgba(128,144,148, 0.75);
+                border: none;
+                color: white;
+                padding: 15px 30px;
+                text-align:center;
+                display: inline-block;
+                font-size: 1em;
+                transition: transform 0.3s;
+                width: 200px;
+                margin: 40px auto;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+            }.boton:hover{
+                transform: scale(1.2);
+                text-decoration: none;
+            }.boxShadow{
+                box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+            }    
+    }
+
+   
+    
+     /*FOOTER*/
+    #imgFooter{
+        width: 100%;
+        height: 500px;
+        background-image: url(../img/footer-flores-otono.jpg);  
+        background-attachment: fixed; 
+        background-size: cover;
+    }
+    .section-index-3{
+        background-image: url(../img/galeria-portada.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 600px;
+    }
+    footer{
+        background-color: $color-footer;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2em;
+        width: 100%;
+        height: 300px;
+        div p{
+            color: white;
+        }
+    }
+
+    .instagramButton{
+        color: white;
+    }
+
+    #footer-icons p{
+        color: white;
+
+    }
+    .icons{
+        font-size: 50px;
+        color: rgb(192, 187, 187);
+        padding: 2px 10px;
+        align-items: center;
+    }
+    .icons:hover{
+        color: white;
+        transition: .4s;
+    }
+  
+/*SECCION GALERIA*/
+div#galFlex{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px auto 80px auto;
+    width: 80%;
+    max-width: 1300px;
+    div h1{
+        color: $color-h1;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }section.containerGaleria{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 2800px;
+        align-content: space-evenly;
+        div.hover-gal{
+            width: 30%;
+            height: auto;
+            margin-bottom: 2%;
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }div.overlay{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: .5s;
+                background-color: $hover-galeria-img;
+                opacity: 0;
+                div.gal-text{
+                   color: white;
+                   font-weight: 400;
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   -webkit-transform: translate(-50%, -50%);
+                   -ms-transform: translate(-50%, -50%);
+                   transform: translate(-50%, -50%);
+                   text-align: center;
+                }
+            }
+        }div.hover-gal:hover div.overlay{
+            opacity: 1;
+        }
+    }
+}
+.hover-gal:hover{
+    opacity: 0.2;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+/*SECCION BIOGRAFIA*/
+main#index-biografia{
+    width: 80%;
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    div#containerAbout{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 20px auto;
+    div h1{
+        color: $color-h1;
+        font-size: 25px;
+        font-weight: 600;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    section#about{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-evenly;
+        p{
+            text-align: justify;
+            width: 40%;
+        }img{
+            height: 500px;
+        }
+    }
+    }
+}
+/*SECCION CONTACTO*/
+
+div#containerContacto{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin: 15px auto;
+    padding-bottom: 25px;;
+    div h1{
+        color: $color-h1;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    section#redes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 280px;
+    align-items: center;
+    div img.imgContacto{
+        width: 210px;
+        margin-right: 60px;
+    }div {
+        p.presupuesto{
+            font-size: 18px;
+        }p{
+        margin-bottom: 20px;
+        align-content: center;
+        a{
+           color: $color-link;
+           text-decoration: none;
+           font-weight: 400;
+        } a:hover{
+           color: $hover-link;
+           transition: .3s;
+        }
+        }  
+    }
+    }
+    section#formContainer{
+        display: grid;
+        background-color:$color-fondo-contacto;
+        width: 600px; 
+        height: 400px;
+        justify-items: center;
+        align-items: center;
+        margin: auto; 
+        form {
+            width: 80%;
+        div{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            padding: 13px;
+            textarea#Consulta{
+                height: 80px;
+            }
+        }div#enviar-borrar{
+            display: flex;
+        }
+        }
+    }
+}
+.botonFormulario{
+    background-color: $boton-formulario-contacto;
+    color: $texto-boton-formulario;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    margin: auto;
+    width: 100px;
+}
+.botonFormulario:hover{
+    transform: scale(1.15);
+    transition: .5s;
+}
+section.section-contacto-img{
+    height: 700px;
+    background-image: url(../img/Untitled-101-03.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px;
+}
+.icons{
+    width: 100px;
+}
+
+/*RESPONSIVE INDEX*/
+
+@media only screen and (min-width: 1366px){
+    div#galFlex section.containerGaleria{
+        height: 3300px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+div#galFlex{
+    margin: 20px auto 0px auto;
+    width: 900px;
+    section.containerGaleria{
+        height: 2450px;
+        padding: 20px;
+        img{
+            width: 32%;
+        }
+    }
+}
+}
+@media only screen and (max-width:950px){
+/*index*/
+main {
+  section#section-img-index{
+        grid-gap:18px;
+        margin-bottom: 30px;
+        img{
+            width: 220px;
+        }div.boton{
+            margin-bottom: 40px;
+        }
+  }section#boton-index div.boton{
+      font-size: 1.9em;
+      padding: 10px 25px;
+  }
+/*footer*/ 
+  }footer{
+      div p{
+          font-size: .9em;
+      }
+  }
+  /*galeria*/
+  div#galFlex{
+    margin: 20px auto 0px auto;
+    width: 760px;
+    section.containerGaleria{
+        height: 1980px;
+        padding: 20px;
+        img{
+            width: 30%;
+        }
+        }
+/*trabajo*/
+} main#areaTrabajo {
+    section#bastidorGrid{
+        height: 450px;
+   
+    }section#marcoGrid{
+        height: 450px;
+    }
+    }
+    div#containerAbout{
+        section#about img{
+        height: 400px;
+        }
+    }
+/*biografia*/
+    main#index-biografia div#containerAbout{
+        flex-wrap: wrap;
+        section#about{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            justify-content: space-evenly;
+            p{
+                text-align: justify;
+                width: 100%;
+            }img{
+                height: 500px;
+            }
+        }
+    }   
+/*contacto*/ 
+
+}
+
+@media only screen and (max-width:767px){
+    nav a img{
+        width: 180px;
+    }
+    .section-index-1{
+        display: none;
+    }
+    section.img-responsive-index{
+        background-image: url(../img/david-flores-responsive-2.jpg);
+        height: 600px;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 0px;
+    }
+    main section#section-img-index{
+        grid-gap:18px;
+        img{
+            width: 160px;
+            transition: transform 0.4s;
+            cursor: pointer;
+        
+    }
+    }footer{
+        font-size: 0.8em;
+    }.icons{
+        font-size: 40px;
+    }
+    main#areaTrabajo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        h1#tituloTrabajos{
+        margin: auto;
+        }
+      section#encargoDisponible{
+        display: flex;
+        flex-wrap: wrap;
+        div.FondoTrabajos{
+            width: 100%;
+            p{
+                text-align: center;
+            }
+        }
+        }section#bastidorGrid{
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            align-content: center;
+            div.imgBastidorFlex img{
+               display: none;
+            }
+            div.bastidorFlex{
+                width: 80%;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }  
+        }section#marcoGrid{
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            align-content: center;
+            div.imgMarcoFlex img{
+                display: none;
+            }
+            div.marcoFlex{
+                width: 80%;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;;
+                }
+            }
+        }
+        }
+    
+    div#galFlex{
+        margin: 20px auto 0px auto;
+        width: 560px;
+        section.containerGaleria{
+            height: 1400px;
+            padding: 20px;
+            img{
+                width: 30%;
+            }
+        }
+    }
+    div#containerAbout{
+        display: flex;
+        flex-flow: row wrap;
+        width: 85%;
+        margin: 20px auto;
+        section#about{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        p{
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }img{
+            
+            height: 600px;
+            margin: auto;
+            }
+        }   
+    }div#containerContacto{
+        div h1{
+            font-size: 22px;
+        }
+        section#redes{
+            div img.imgContacto{
+                    width: 210px; 
+            }div {
+                p.presupuesto{
+                font-size: 13px;
+                }p {
+                    font-size: 13px;
+                a{
+                    font-size: 13px;
+                }
+                }
+            }
+        }
+        section#formContainer{
+            width: 450px; 
+
+            form div.espacioForm{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                padding: 13px;
+                textarea#Consulta{
+                    height: 80px;
+                }input#celular{
+                    
+                }
+            }
+        }form div{
+            font-size: 13px;
+        }
+    }
+    .icons{
+        width: 100px;
+    }
+    .botonFormulario{
+        background-color: $boton-formulario-contacto;
+        color: $texto-boton-formulario;
+        border: none;
+        padding: 7px 15px 7px 15px;
+        margin: 7px;
+        width: 100px;
+    }.botonFormulario:hover{
+        transform: scale(1.15);
+        transition: .5s;
+    
+    }
+    
+    section.section-contacto-img{
+        height: 700px;
+        background-image: url(../img/Untitled-101-03.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 0px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 599px){
+    
+    main div.imgFrase p{
+        font-size: 0.8em;
+        margin: 30px 8%;
+    }
+    main section#section-img-index{
+        grid-gap:16px;
+        img{
+            width: 120px;
+        }
+    }main section#boton-index div.boton{
+        padding: 13px 22px;
+        font-size: 30px;
+    }
+    section.section-index-3{
+        height: 250px;
+    }
+    footer{
+        font-size: 0.6em;
+        height: 200px;
+    }.icons{
+        font-size: 35px;
+    }
+    div#galFlex{
+        margin: 20px auto 0px auto;
+        width: 450px;
+        section.containerGaleria{
+            height: 2450px;
+            padding: 20px;
+            img{
+                width: 47%;
+            }
+        }
+    }div#containerAbout section#about img{
+        height: 500px;
+    }
+    div#containerContacto{
+        flex-direction: column;
+        width: 90%;
+        margin: 15px auto;
+        div h1{
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+        section#redes{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        div img.imgContacto{
+            width: 210px;
+            margin: 0pc auto 20px auto;
+        }div {
+            p.presupuesto{
+                font-size: 18px;
+            }p{
+           margin-bottom: 20px;
+           align-content: center;
+           a{
+               color: $color-link;
+               text-decoration: none;
+               font-weight: 400;
+           } a:hover{
+               color: $hover-link;
+               transition: .3s;
+           }
+           }  
+        }
+        }
+    }section#formContainer{
+            display: grid;
+            background-color:$color-fondo-contacto;
+            width: 600px; 
+            height: 400px;
+            justify-items: center;
+            align-items: center;
+            margin: auto; 
+            form {
+                width: 80%;
+            div{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                padding: 13px;
+                textarea#Consulta{
+                    height: 80px;
+                }input#celular{
+                    
+                }
+            }
+            }
+    }section.section-contacto-img{
+        background-image: url(../img/david-flores-responsive-2.jpg);
+    }
+    
+    .icons{
+        width: 100px;
+    }
+    .botonFormulario{
+        background-color: $boton-formulario-contacto;
+        color: $texto-boton-formulario;
+        border: none;
+        padding: 7px 15px 7px 15px;
+        margin: 7px;
+        width: 100px;
+    }
+    .botonFormulario:hover{
+        transform: scale(1.15);
+        transition: .5s;
+    }
+}
+
+
+@media only screen and (max-width: 479px){
+    
+nav a img{
+    width: 163px;
+}
+    main div.imgFrase p{
+        font-size: 0.7em;
+        margin: 10px 40px;
+    }
+   main section#section-img-index{
+        /* grid-template-columns: auto auto;
+        grid-gap:15px;*/
+        display: flex;
+        flex-flow: row wrap;
+        img{
+            width: 150px;
+        }
+    }
+    .section-index-3{
+        height: 200px;
+    }
+    footer{
+        font-size: 0.9em;
+        height: 250px;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        div#footer-icons p{
+            margin-left: 10px;
+        }div p{
+            margin-left: 10px;
+            padding-left: 0px;
+        }
+    }
+    
+    main#areaTrabajo{
+        width: 90%;
+        h1#tituloTrabajos{
+            font-size: 22px;
+            margin: auto;
+        }
+        
+        section#encargoDisponible{
+            height: 280px;
+            align-content: center;
+            div.FondoTrabajos{
+                p{
+                    width: 90%;
+                    padding: 0;
+                    margin: auto;
+                }
+            }
+        }section#bastidorGrid{
+            height: 330px;
+            align-content: center;
+            div.bastidorFlex{
+                width: 90%;
+                margin: auto;
+                p{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }section#marcoGrid{
+            height: 360px;
+            align-content: center;
+            div.marcoFlex{
+                width: 90%;
+                margin: auto;
+                p{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+    
+    
+    div#galFlex{
+            margin: 10px auto 0px auto;
+            width: 300px;
+            div h1{
+                font-size: 22px;
+                margin: auto;
+            }
+            section.containerGaleria{
+                height: 6400px;
+                padding: 20px;
+                width: 100%;
+                div.hover-gal{
+                    width: 100%;
+                
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    div#containerContacto{
+        div h1{
+            font-size: 22px;
+        }section#redes{
+            div p.presupuesto{
+                font-size: 15px;
+                text-align: center;
+            }div p{
+                text-align: center;
+            }
+        }section#formContainer{
+            display: flex;
+            background-color:$color-fondo-contacto;
+            width: 260px; 
+            flex-flow: row wrap;
+            margin: auto;
+            height: 550px;
+            form {
+                width: 80%;
+                margin: auto;
+ 
+            div{
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;justify-content: center;
+                padding: 13px;
+                label{
+                    width: 100%;
+                    text-align: center;
+                }input{
+                    width: 100%;
+                }
+                textarea#Consulta{
+                    height: 80px;
+                    width: 100%;
+                }input#celular{
+                    width: 100%;
+                }
+            }
+        }.botonFormulario{
+            
+            width: 45%;
+            margin: auto;
+        }
+        }section.section-contacto-img{
+            background-image: url(../img/david-flores-responsive-2.jpg);
+        }
+    }
+    main {
+    div#containerAbout{
+        div h1{
+            font-size: 22px;
+        }section#about img{
+        height: 300px;
+        }
+    }
+    }
+    
+}
+

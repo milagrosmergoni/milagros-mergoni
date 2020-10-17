@@ -1,0 +1,1299 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: 200;
+  background-color: white;
+}
+
+/*NAVBAR*/
+nav a.navbar-brand {
+  padding-left: 5%;
+}
+
+nav div {
+  padding-right: 4%;
+}
+
+nav div ul li {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+nav div ul li a:hover {
+  background-color: #96B1B7;
+  padding: 8px 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*MAIN SECTION INDEX*/
+main section.section-index-1 {
+  background-image: url(../img/david-flores.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 0px;
+  height: 600px;
+}
+
+main section.section-index-1 div.imgFrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: black;
+  font-size: 25px;
+  padding-top: 380px;
+  font-weight: 400;
+}
+
+main section#section-img-index {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 40px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 25px;
+}
+
+main section#section-img-index img {
+  width: 280px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  cursor: pointer;
+}
+
+main section#section-img-index img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main section#boton-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto;
+}
+
+main section#boton-index div.boton {
+  font-family: 'Annie Use Your Telescope', cursive;
+  background-color: rgba(128, 144, 148, 0.75);
+  border: none;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.1em;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
+}
+
+main section#boton-index div.boton a {
+  color: white;
+}
+
+main section#boton-index .boton:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main section#boton-index .boxShadow {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+main section#boton-index .boton a:hover {
+  text-decoration: none;
+}
+
+/*SECTION TRABAJOS*/
+h1#tituloTrabajos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h1;
+  text-align: center;
+  color: #3C4446;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+section#encargoDisponible {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: encargo;
+}
+
+section#bastidorGrid {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: bastidor;
+}
+
+section#marcoGrid {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: marco;
+}
+
+#gridBoton {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: boton-galeria;
+  width: 100px;
+      justify-self: center;
+}
+
+div#imgGridTrabajos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+}
+
+main#areaTrabajo {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0px;
+      grid-template-areas: "h1" "encargo" "bastidor" "marco" "boton-galeria" "imagen";
+  margin: 10px auto 50px auto;
+  width: 80%;
+}
+
+/*Flex dentro de Grid*/
+main#areaTrabajo {
+  width: 80%;
+  max-width: 1200px;
+  color: #3C4446;
+}
+
+main#areaTrabajo h1#tituloTrabajos {
+  margin: auto;
+  color: #3C4446;
+}
+
+main#areaTrabajo section#encargoDisponible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #96B1B7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#areaTrabajo section#encargoDisponible div.FondoTrabajos {
+  color: #3C4446;
+  width: 100%;
+  text-align: justify;
+}
+
+main#areaTrabajo section#encargoDisponible div.FondoTrabajos h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 10px 25px;
+  color: #3C4446;
+}
+
+main#areaTrabajo section#encargoDisponible div.FondoTrabajos p {
+  padding: 5px 50px 20px 50px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #3C4446;
+}
+
+main#areaTrabajo section#encargoDisponible div.FondoTrabajos p a {
+  text-decoration: none;
+  color: #1d1f1f;
+  font-weight: 400;
+  font-style: italic;
+}
+
+main#areaTrabajo section#bastidorGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #a7bec3;
+  height: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#areaTrabajo section#bastidorGrid div.imgBastidorFlex {
+  width: 35%;
+}
+
+main#areaTrabajo section#bastidorGrid div.imgBastidorFlex img {
+  height: 300px;
+}
+
+main#areaTrabajo section#bastidorGrid div.bastidorFlex {
+  width: 30%;
+  text-align: justify;
+}
+
+main#areaTrabajo section#bastidorGrid div.bastidorFlex h3 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #3C4446;
+}
+
+main#areaTrabajo section#bastidorGrid div.bastidorFlex p {
+  font-size: 15px;
+}
+
+main#areaTrabajo section#marcoGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b8cace;
+  height: 350px;
+}
+
+main#areaTrabajo section#marcoGrid div.imgMarcoFlex {
+  width: 35%;
+}
+
+main#areaTrabajo section#marcoGrid div.imgMarcoFlex img {
+  height: 300px;
+}
+
+main#areaTrabajo section#marcoGrid div.marcoFlex {
+  width: 30%;
+  text-align: justify;
+}
+
+main#areaTrabajo section#marcoGrid div.marcoFlex h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #3C4446;
+  font-size: 20px;
+}
+
+main#areaTrabajo section#marcoGrid div.marcoFlex p {
+  font-size: 15px;
+}
+
+main#areaTrabajo a.boton {
+  background-color: rgba(128, 144, 148, 0.75);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  width: 200px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+main#areaTrabajo a.boton a {
+  color: white;
+}
+
+main#areaTrabajo .boton:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-decoration: none;
+}
+
+main#areaTrabajo .boxShadow {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*FOOTER*/
+#imgFooter {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/footer-flores-otono.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.section-index-3 {
+  background-image: url(../img/galeria-portada.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+
+footer {
+  background-color: #768a8f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
+  width: 100%;
+  height: 300px;
+}
+
+footer div p {
+  color: white;
+}
+
+.instagramButton {
+  color: white;
+}
+
+#footer-icons p {
+  color: white;
+}
+
+.icons {
+  font-size: 50px;
+  color: #c0bbbb;
+  padding: 2px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons:hover {
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/*SECCION GALERIA*/
+div#galFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 20px auto 80px auto;
+  width: 80%;
+  max-width: 1300px;
+}
+
+div#galFlex div h1 {
+  color: #3C4446;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+div#galFlex section.containerGaleria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+  height: 2800px;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+div#galFlex section.containerGaleria div.hover-gal {
+  width: 30%;
+  height: auto;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+div#galFlex section.containerGaleria div.hover-gal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+div#galFlex section.containerGaleria div.hover-gal div.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #768a8f;
+  opacity: 0;
+}
+
+div#galFlex section.containerGaleria div.hover-gal div.overlay div.gal-text {
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div#galFlex section.containerGaleria div.hover-gal:hover div.overlay {
+  opacity: 1;
+}
+
+.hover-gal:hover {
+  opacity: 0.2;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+/*SECCION BIOGRAFIA*/
+main#index-biografia {
+  width: 80%;
+  margin: auto;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main#index-biografia div#containerAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+  margin: 20px auto;
+}
+
+main#index-biografia div#containerAbout div h1 {
+  color: #3C4446;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+main#index-biografia div#containerAbout section#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main#index-biografia div#containerAbout section#about p {
+  text-align: justify;
+  width: 40%;
+}
+
+main#index-biografia div#containerAbout section#about img {
+  height: 500px;
+}
+
+/*SECCION CONTACTO*/
+div#containerContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 80%;
+  margin: 15px auto;
+  padding-bottom: 25px;
+}
+
+div#containerContacto div h1 {
+  color: #3C4446;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+div#containerContacto section#redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  height: 280px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#containerContacto section#redes div img.imgContacto {
+  width: 210px;
+  margin-right: 60px;
+}
+
+div#containerContacto section#redes div p.presupuesto {
+  font-size: 18px;
+}
+
+div#containerContacto section#redes div p {
+  margin-bottom: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+div#containerContacto section#redes div p a {
+  color: #1d1f1f;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+div#containerContacto section#redes div p a:hover {
+  color: #96B1B7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+div#containerContacto section#formContainer {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+div#containerContacto section#formContainer form {
+  width: 80%;
+}
+
+div#containerContacto section#formContainer form div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  padding: 13px;
+}
+
+div#containerContacto section#formContainer form div textarea#Consulta {
+  height: 80px;
+}
+
+div#containerContacto section#formContainer form div#enviar-borrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.botonFormulario {
+  background-color: #96B1B7;
+  color: white;
+  border: none;
+  padding: 7px 15px 7px 15px;
+  margin: auto;
+  width: 100px;
+}
+
+.botonFormulario:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.section-contacto-img {
+  height: 700px;
+  background-image: url(../img/Untitled-101-03.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 0px;
+}
+
+.icons {
+  width: 100px;
+}
+
+/*RESPONSIVE INDEX*/
+@media only screen and (min-width: 1366px) {
+  div#galFlex section.containerGaleria {
+    height: 3300px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div#galFlex {
+    margin: 20px auto 0px auto;
+    width: 900px;
+  }
+  div#galFlex section.containerGaleria {
+    height: 2450px;
+    padding: 20px;
+  }
+  div#galFlex section.containerGaleria img {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /*index*/
+  main {
+    /*footer*/
+  }
+  main section#section-img-index {
+    grid-gap: 18px;
+    margin-bottom: 30px;
+  }
+  main section#section-img-index img {
+    width: 220px;
+  }
+  main section#section-img-index div.boton {
+    margin-bottom: 40px;
+  }
+  main section#boton-index div.boton {
+    font-size: 1.9em;
+    padding: 10px 25px;
+  }
+  footer div p {
+    font-size: .9em;
+  }
+  /*galeria*/
+  div#galFlex {
+    margin: 20px auto 0px auto;
+    width: 760px;
+    /*trabajo*/
+  }
+  div#galFlex section.containerGaleria {
+    height: 1980px;
+    padding: 20px;
+  }
+  div#galFlex section.containerGaleria img {
+    width: 30%;
+  }
+  main#areaTrabajo section#bastidorGrid {
+    height: 450px;
+  }
+  main#areaTrabajo section#marcoGrid {
+    height: 450px;
+  }
+  div#containerAbout section#about img {
+    height: 400px;
+  }
+  /*biografia*/
+  main#index-biografia div#containerAbout {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main#index-biografia div#containerAbout section#about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main#index-biografia div#containerAbout section#about p {
+    text-align: justify;
+    width: 100%;
+  }
+  main#index-biografia div#containerAbout section#about img {
+    height: 500px;
+  }
+  /*contacto*/
+}
+
+@media only screen and (max-width: 767px) {
+  nav a img {
+    width: 180px;
+  }
+  .section-index-1 {
+    display: none;
+  }
+  section.img-responsive-index {
+    background-image: url(../img/david-flores-responsive-2.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px;
+  }
+  main section#section-img-index {
+    grid-gap: 18px;
+  }
+  main section#section-img-index img {
+    width: 160px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    cursor: pointer;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+  .icons {
+    font-size: 40px;
+  }
+  main#areaTrabajo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  main#areaTrabajo h1#tituloTrabajos {
+    margin: auto;
+  }
+  main#areaTrabajo section#encargoDisponible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main#areaTrabajo section#encargoDisponible div.FondoTrabajos {
+    width: 100%;
+  }
+  main#areaTrabajo section#encargoDisponible div.FondoTrabajos p {
+    text-align: center;
+  }
+  main#areaTrabajo section#bastidorGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 300px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main#areaTrabajo section#bastidorGrid div.imgBastidorFlex img {
+    display: none;
+  }
+  main#areaTrabajo section#bastidorGrid div.bastidorFlex {
+    width: 80%;
+  }
+  main#areaTrabajo section#bastidorGrid div.bastidorFlex h3 {
+    text-align: center;
+  }
+  main#areaTrabajo section#bastidorGrid div.bastidorFlex p {
+    text-align: center;
+  }
+  main#areaTrabajo section#marcoGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 300px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main#areaTrabajo section#marcoGrid div.imgMarcoFlex img {
+    display: none;
+  }
+  main#areaTrabajo section#marcoGrid div.marcoFlex {
+    width: 80%;
+  }
+  main#areaTrabajo section#marcoGrid div.marcoFlex h3 {
+    text-align: center;
+  }
+  main#areaTrabajo section#marcoGrid div.marcoFlex p {
+    text-align: center;
+  }
+  div#galFlex {
+    margin: 20px auto 0px auto;
+    width: 560px;
+  }
+  div#galFlex section.containerGaleria {
+    height: 1400px;
+    padding: 20px;
+  }
+  div#galFlex section.containerGaleria img {
+    width: 30%;
+  }
+  div#containerAbout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 85%;
+    margin: 20px auto;
+  }
+  div#containerAbout section#about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  div#containerAbout section#about p {
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  div#containerAbout section#about img {
+    height: 600px;
+    margin: auto;
+  }
+  div#containerContacto div h1 {
+    font-size: 22px;
+  }
+  div#containerContacto section#redes div img.imgContacto {
+    width: 210px;
+  }
+  div#containerContacto section#redes div p.presupuesto {
+    font-size: 13px;
+  }
+  div#containerContacto section#redes div p {
+    font-size: 13px;
+  }
+  div#containerContacto section#redes div p a {
+    font-size: 13px;
+  }
+  div#containerContacto section#formContainer {
+    width: 450px;
+  }
+  div#containerContacto section#formContainer form div.espacioForm {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    padding: 13px;
+  }
+  div#containerContacto section#formContainer form div.espacioForm textarea#Consulta {
+    height: 80px;
+  }
+  div#containerContacto form div {
+    font-size: 13px;
+  }
+  .icons {
+    width: 100px;
+  }
+  .botonFormulario {
+    background-color: #96B1B7;
+    color: white;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    margin: 7px;
+    width: 100px;
+  }
+  .botonFormulario:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  section.section-contacto-img {
+    height: 700px;
+    background-image: url(../img/Untitled-101-03.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  main div.imgFrase p {
+    font-size: 0.8em;
+    margin: 30px 8%;
+  }
+  main section#section-img-index {
+    grid-gap: 16px;
+  }
+  main section#section-img-index img {
+    width: 120px;
+  }
+  main section#boton-index div.boton {
+    padding: 13px 22px;
+    font-size: 30px;
+  }
+  section.section-index-3 {
+    height: 250px;
+  }
+  footer {
+    font-size: 0.6em;
+    height: 200px;
+  }
+  .icons {
+    font-size: 35px;
+  }
+  div#galFlex {
+    margin: 20px auto 0px auto;
+    width: 450px;
+  }
+  div#galFlex section.containerGaleria {
+    height: 2450px;
+    padding: 20px;
+  }
+  div#galFlex section.containerGaleria img {
+    width: 47%;
+  }
+  div#containerAbout section#about img {
+    height: 500px;
+  }
+  div#containerContacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 15px auto;
+  }
+  div#containerContacto div h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+  div#containerContacto section#redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  div#containerContacto section#redes div img.imgContacto {
+    width: 210px;
+    margin: 0pc auto 20px auto;
+  }
+  div#containerContacto section#redes div p.presupuesto {
+    font-size: 18px;
+  }
+  div#containerContacto section#redes div p {
+    margin-bottom: 20px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  div#containerContacto section#redes div p a {
+    color: #1d1f1f;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  div#containerContacto section#redes div p a:hover {
+    color: #96B1B7;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  section#formContainer {
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  section#formContainer form {
+    width: 80%;
+  }
+  section#formContainer form div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    padding: 13px;
+  }
+  section#formContainer form div textarea#Consulta {
+    height: 80px;
+  }
+  section.section-contacto-img {
+    background-image: url(../img/david-flores-responsive-2.jpg);
+  }
+  .icons {
+    width: 100px;
+  }
+  .botonFormulario {
+    background-color: #96B1B7;
+    color: white;
+    border: none;
+    padding: 7px 15px 7px 15px;
+    margin: 7px;
+    width: 100px;
+  }
+  .botonFormulario:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  nav a img {
+    width: 163px;
+  }
+  main div.imgFrase p {
+    font-size: 0.7em;
+    margin: 10px 40px;
+  }
+  main section#section-img-index {
+    /* grid-template-columns: auto auto;
+        grid-gap:15px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  main section#section-img-index img {
+    width: 150px;
+  }
+  .section-index-3 {
+    height: 200px;
+  }
+  footer {
+    font-size: 0.9em;
+    height: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer div#footer-icons p {
+    margin-left: 10px;
+  }
+  footer div p {
+    margin-left: 10px;
+    padding-left: 0px;
+  }
+  main#areaTrabajo {
+    width: 90%;
+  }
+  main#areaTrabajo h1#tituloTrabajos {
+    font-size: 22px;
+    margin: auto;
+  }
+  main#areaTrabajo section#encargoDisponible {
+    height: 280px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main#areaTrabajo section#encargoDisponible div.FondoTrabajos p {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+  main#areaTrabajo section#bastidorGrid {
+    height: 330px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main#areaTrabajo section#bastidorGrid div.bastidorFlex {
+    width: 90%;
+    margin: auto;
+  }
+  main#areaTrabajo section#bastidorGrid div.bastidorFlex p {
+    width: 100%;
+    padding: 0;
+  }
+  main#areaTrabajo section#marcoGrid {
+    height: 360px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main#areaTrabajo section#marcoGrid div.marcoFlex {
+    width: 90%;
+    margin: auto;
+  }
+  main#areaTrabajo section#marcoGrid div.marcoFlex p {
+    width: 100%;
+    padding: 0;
+  }
+  div#galFlex {
+    margin: 10px auto 0px auto;
+    width: 300px;
+  }
+  div#galFlex div h1 {
+    font-size: 22px;
+    margin: auto;
+  }
+  div#galFlex section.containerGaleria {
+    height: 6400px;
+    padding: 20px;
+    width: 100%;
+  }
+  div#galFlex section.containerGaleria div.hover-gal {
+    width: 100%;
+  }
+  div#galFlex section.containerGaleria div.hover-gal img {
+    width: 100%;
+  }
+  div#containerContacto div h1 {
+    font-size: 22px;
+  }
+  div#containerContacto section#redes div p.presupuesto {
+    font-size: 15px;
+    text-align: center;
+  }
+  div#containerContacto section#redes div p {
+    text-align: center;
+  }
+  div#containerContacto section#formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    width: 260px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: auto;
+    height: 550px;
+  }
+  div#containerContacto section#formContainer form {
+    width: 80%;
+    margin: auto;
+  }
+  div#containerContacto section#formContainer form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 13px;
+  }
+  div#containerContacto section#formContainer form div label {
+    width: 100%;
+    text-align: center;
+  }
+  div#containerContacto section#formContainer form div input {
+    width: 100%;
+  }
+  div#containerContacto section#formContainer form div textarea#Consulta {
+    height: 80px;
+    width: 100%;
+  }
+  div#containerContacto section#formContainer form div input#celular {
+    width: 100%;
+  }
+  div#containerContacto section#formContainer .botonFormulario {
+    width: 45%;
+    margin: auto;
+  }
+  div#containerContacto section.section-contacto-img {
+    background-image: url(../img/david-flores-responsive-2.jpg);
+  }
+  main div#containerAbout div h1 {
+    font-size: 22px;
+  }
+  main div#containerAbout section#about img {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
