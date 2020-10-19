@@ -1145,8 +1145,8 @@ section.section-contacto-img {
         flex-flow: row wrap;*/
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     margin: 30px 10px;
   }
   main section#section-img-index img {
