@@ -51,6 +51,7 @@ main section.section-index-1 div.imgFrase {
   display: flex;
   width: 80%;
   margin: auto;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -362,14 +363,6 @@ main#areaTrabajo .boxShadow {
 }
 
 /*FOOTER*/
-#imgFooter {
-  width: 100%;
-  height: 500px;
-  background-image: url(../img/footer-flores-otono.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 .section-index-3 {
   background-image: url(../img/galeria-portada.jpg);
   background-attachment: fixed;
@@ -795,13 +788,13 @@ section.section-contacto-img {
   }
   section.img-responsive-index {
     background-image: url(../img/triptico2.jpg);
-    height: 400px;
+    height: 600px;
     background-attachment: fixed;
     background-size: cover;
     margin-top: 0px;
   }
   section.section-index-3 {
-    background-image: url(../img/footer-flores-otono.jpg);
+    display: none;
   }
   main section#section-img-index {
     grid-gap: 18px;
@@ -1132,17 +1125,13 @@ section.section-contacto-img {
     width: 163px;
   }
   section.img-responsive-index {
-    height: 350px;
+    height: 500px;
   }
   main div.imgFrase p {
     font-size: 0.7em;
     margin: 10px 40px;
   }
   main section#section-img-index {
-    /* grid-template-columns: auto auto;
-        grid-gap:15px;
-        display: flex;
-        flex-flow: row wrap;*/
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
