@@ -709,6 +709,10 @@ section.section-contacto-img {
 
 @media only screen and (max-width: 950px) {
   /*index*/
+  nav div ul li a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   main {
     /*footer*/
   }
