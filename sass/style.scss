@@ -922,7 +922,7 @@ section.img-responsive-index{
         font-size: 25px;
     }
     .section-index-3{
-        height: 200px;
+        display: none;
     }
     footer{
         font-size: 0.9em;
@@ -1046,9 +1046,9 @@ section.img-responsive-index{
             width: 45%;
             margin: auto;
         }
-        }section.section-contacto-img{
-            background-image: url(../img/david-flores-responsive-2.jpg);
         }
+    }section.section-contacto-img{
+      display: none;
     }
     main {
     div#containerAbout{

@@ -1150,7 +1150,7 @@ section.section-contacto-img {
     font-size: 25px;
   }
   .section-index-3 {
-    height: 200px;
+    display: none;
   }
   footer {
     font-size: 0.9em;
@@ -1293,8 +1293,8 @@ section.section-contacto-img {
     width: 45%;
     margin: auto;
   }
-  div#containerContacto section.section-contacto-img {
-    background-image: url(../img/david-flores-responsive-2.jpg);
+  section.section-contacto-img {
+    display: none;
   }
   main div#containerAbout div h1 {
     font-size: 22px;
